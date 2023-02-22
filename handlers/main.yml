@@ -1,0 +1,9 @@
+- name: reload systemd daemon
+  systemd:
+    daemon_reload: True
+
+- name: restart systemd-journal-upload
+  systemd:
+    name: systemd-journal-upload
+    state: restarted
+    enabled: True

@@ -1,0 +1,2 @@
+systemd_journal_remote_server_port: 19532
+systemd_journal_remote_letsencrypt_certificate_name: "{{ inventory_hostname }}.{{ internal_private_domain }}"
